@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <title>xdproject @xdlinux.info</title>
+    <script type="text/javascript"
+      src="http://xdlinux.info/mathjax/MathJax.js?config=default" ></script>
+    <style type="text/css">
+      body {
+        margin-top: 1.0em;
+        background: #e1e1e1 repeat url(data/background.png) 0 0;
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, FreeSans, san-serif;
+        text-shadow: 1px 1px 0px #FFFFFF;
+        color: #000;
+      }
+     h1 { font-size: 3.8em; color: #07337b; margin-bottom: 3px; }
+     h1 .small { font-size: 0.4em; }
+     h1 a { text-decoration: none }
+     </style>
+ </head>
+
+ <body>
+     <h1><a href="https://github.com/xdlinux">xdproject</a>
+        <span class="small">by <a href="https://github.com/xdlinux">xdlinux</a></span></h1>

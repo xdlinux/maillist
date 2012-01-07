@@ -42,13 +42,15 @@ for i in project:
     pro[n].append(i.div.p)
     pro[n].append(i.canvas)
     n=n+1
+  
 
 #print pro
 #print n
 ########################################
 ####clear and fix the data清理并修正数据########
-
-
+for i in range(n):
+    pro[i][0]=str(pro[i][0]).replace("/xdlinux","http://github.com/xdlinux")
+    
 
 
 
@@ -56,6 +58,7 @@ for i in project:
 ####save data into file 输出到文件#####
 for row in pro:
     for i in [0,1,2]:
+        print >> f_tar,"</br>"
         print >> f_tar,row[i]
 #print >> f_tar,pro
 
@@ -80,9 +83,12 @@ f_tar.close()                    #close the files关闭文件
 ########################################################
 f_src=open('data/xdgithub.txt','r')                       #open the data file 
 f_tar=open('project.html','w')
+f_head=open('data/head.src','r')                          #open the html head
+f_tail=open('data/tail.src','r')                          #open the html tail
 
-print >> f_tar,"<html>"
-print >> f_tar,"<meta charset=\"utf8\"/>"
+#print >> f_tar,"<html>"
+#print >> f_tar,"<meta charset=\"utf8\"/>"
+print >> f_tar,f_head.read()
 #######
 
 
@@ -99,7 +105,9 @@ print >> f_tar,"<meta charset=\"utf8\"/>"
 
 
 print >> f_tar,f_src.read()
-print >> f_tar,"</html>"
+print >> f_tar,f_tail.read()
+#print >> f_tar,"</html>"
 f_src.close()
 f_tar.close()
-
+f_head.close()
+f_tail.close()
