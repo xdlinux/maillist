@@ -64,7 +64,7 @@ for row in pro:
 
 ###############
 
-print >> f_tar,"</br> powered by lvzongting@gmail.com"
+print >> f_tar,"</br> <!-- powered by lvzongting@gmail.com -->"
 
 ##debug#########
 #print "####cache/xdgithub.html####"

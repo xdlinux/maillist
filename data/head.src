@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
@@ -14,12 +15,33 @@
         text-shadow: 1px 1px 0px #FFFFFF;
         color: #000;
       }
+      #container {
+        margin: 0 auto;
+        width: 800px;
+      }
      h1 { font-size: 3.8em; color: #07337b; margin-bottom: 3px; }
      h1 .small { font-size: 0.4em; }
      h1 a { text-decoration: none }
-     </style>
+     .xddescrip { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+     .download { float: right; }
+     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    </style>
  </head>
 
  <body>
+    <a href="joinus.html"><img style="position: absolute; top: 0; right: 0; border: 0;"src="data/joinus.png" alt="Join me on GitHub" /></a>
+
+    <div id="container">
+ 
+      <div class="download">
+        <a href="https://github.com/xdlinux.atom">
+          <img border="0" width="64" src="data/rss.png" alt="订阅更新">
+        </a>
+      </div>
+
      <h1><a href="https://github.com/xdlinux">xdproject</a>
         <span class="small">by <a href="https://github.com/xdlinux">xdlinux</a></span></h1>
+     
+     <div class="xddescrip">
+        xdproject 系西电开源社区项目实践部分，旨在通过实践的方法促进学习和信息的流动。
+     </div>
