@@ -29,7 +29,7 @@
  </head>
 
  <body>
-    <a href="joinus.html"><img style="position: absolute; top: 0; right: 0; border: 0;"src="data/joinus.png" alt="Join me on GitHub" /></a>
+    <a href="joinus.html"><img style="position: absolute; top: 0; right: 0; border: 0;"src="data/joinus.png" alt="Join us on GitHub" /></a>
 
     <div id="container">
  
@@ -40,7 +40,7 @@
       </div>
 
      <h1><a href="https://github.com/xdlinux">xdproject</a>
-        <span class="small">by <a href="https://github.com/xdlinux">xdlinux</a></span></h1>
+        <span class="small">by <a href="http://linux.xidian.edu.cn">xdlinux</a></span></h1>
      
      <div class="xddescrip">
         xdproject 系西电开源社区项目实践部分，旨在通过实践的方法促进学习和信息的流动。
