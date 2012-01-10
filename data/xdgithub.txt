@@ -1,12 +1,4 @@
 </br>
-<a href="http://github.com/xdlinux/xdba-thesis">xdba-thesis</a>
-</br>
-<p class="description">
-          西电本科毕业设计论文LaTeX模板宏包
-        </p>
-</br>
-<canvas class="bars" data-source="/xdlinux/xdba-thesis/graphs/participation" height="20" width="416"></canvas>
-</br>
 <a href="http://github.com/xdlinux/xdproject">xdproject</a>
 </br>
 <p class="description">
@@ -14,6 +6,14 @@
         </p>
 </br>
 <canvas class="bars" data-source="/xdlinux/xdproject/graphs/participation" height="20" width="416"></canvas>
+</br>
+<a href="http://github.com/xdlinux/xdba-thesis">xdba-thesis</a>
+</br>
+<p class="description">
+          西电本科毕业设计论文LaTeX模板宏包
+        </p>
+</br>
+<canvas class="bars" data-source="/xdlinux/xdba-thesis/graphs/participation" height="20" width="416"></canvas>
 </br>
 <a href="http://github.com/xdlinux/IndexPlus">IndexPlus</a>
 </br>
@@ -68,4 +68,6 @@
         </p>
 </br>
 <canvas class="bars" data-source="/xdlinux/mentohust_xidian/graphs/participation" height="20" width="416"></canvas>
-</br> <!-- powered by lvzongting@gmail.com -->
+</br>
+<!--powered by lvzongting@gmail.com-->
+<!--create in Tue Jan 10 08:14:35 2012-->

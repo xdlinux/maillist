@@ -4,6 +4,7 @@ import urllib                   #get the web  获得网页
 from BeautifulSoup import BeautifulSoup      #analysis the xml   分析xml语言          
 import re                       #regular 包括正则表达处理的部分
 import sys                      #import this for debug sys中包括文件处理的部分
+import os,time                  #import this for time  os,time中包括时间相关的部分
 #################################################
 ####get the web of xdlinux in github 获得网页####
 #################################################
@@ -64,7 +65,8 @@ for row in pro:
 
 ###############
 
-print >> f_tar,"</br> <!-- powered by lvzongting@gmail.com -->"
+print >> f_tar,"</br>\n<!--powered by lvzongting@gmail.com-->"
+print >> f_tar,"<!--create in "+time.ctime(os.stat("cache/xdgithub.html").st_ctime)+"-->"
 
 ##debug#########
 #print "####cache/xdgithub.html####"
