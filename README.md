@@ -1,17 +1,5 @@
-xdlinux 的project的页面
+xdlinux 的maillist页面
 ===
-
-Install 
----
-好吧....安装方法....
-
-  1. xdp.py 不要放到公开目录，放到一个安全的地方，当然必须在计算机里面。
-  2. 其他文件放在一个可以被访问的目录。
-  3. xdproject.html 这个是主页，如果需要可以修改名字，但是要记住修改xdp.py里面的相关的名字。
-  4. 然后修改xdp.py里面的路径为绝对路径。
-  5. 定时执行xdp.py 这个可以很随意，可以是crontab 或是由其他的程序调用，每次调用就会重新构造一边xdproject.html
-
-这个安装过程，写的很随意。
 
 基本思路:
 ---
@@ -23,8 +11,8 @@ Install
 
 目录及文件简介：
 ---
-* xdp.py        #核心程序
-* project.html  #最终生成的html文件
+* xdx.py        #核心程序
+* maillist.html  #最终生成的html文件
 * reference/     #存放编写程序的时候用到的资料
 * cache/         #存放抓取来的页面
 * data/          #存放生成的数据
