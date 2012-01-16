@@ -5,21 +5,20 @@ from BeautifulSoup import BeautifulSoup      #analysis the xml   分析xml语言
 import re                       #regular 包括正则表达处理的部分
 import sys                      #import this for debug sys中包括文件处理的部分
 import os,time                  #import this for time  os,time中包括时间相关的部分
-import mechanize,cookielib      #import this for get web 这个包含进来为了得到一个浏览器
 #################################################
 ####get the web of xdlinux in github 获得网页####
 #################################################
-url="https://groups.google.com/group/xidian_linux/topics" #set url 设置url 
-web=urllib.urlopen(url)         #get the url 获得网页
-content=web.read()              #get the content 获得网页内容
+#url="https://groups.google.com/group/xidian_linux/topics" #set url 设置url 
+#web=urllib.urlopen(url)         #get the url 获得网页
+#content=web.read()              #get the content 获得网页内容
+##
 #
-
-#print for debug this is not real part of this code 
-#print content                  #test the content 测试网页内容
-file=open('cache/maillist.html','w')                     #open the file  打开文件准备写入
-print >> file,content           #save the content to the file 存储网页内容到文件
-file.close()                    #close the file 写入结束关闭文件
-#
+##print for debug this is not real part of this code 
+##print content                  #test the content 测试网页内容
+#file=open('cache/maillist.html','w')                     #open the file  打开文件准备写入
+#print >> file,content           #save the content to the file 存储网页内容到文件
+#file.close()                    #close the file 写入结束关闭文件
+##
 ###########################################
 ####analysis the content 开始处理文件了####
 ###########################################
@@ -31,18 +30,17 @@ f_tar=open('data/maillist.txt','w+')                      #open the target file
 f_src.seek(0)                    #go back to the head of file 回到文件头部
 soup=BeautifulSoup(f_src.read()) #put the file into the soup  将文件放到soup中处理
 
-pschar=re.compile("public source$")                        #set fix points 用正则表达设立定位点的特征
-project=soup.findAll('li',attrs={'class':pschar})          #get the fix point 取得定位点
+project=soup.findAll(lambda tag: len(tag.attrs)==2 ,attrs={'cellpadding':'0','cellspacing':'0'})            #get the fix point 取得定位点
 #print project[0].h3.a
 ##########################################
-#####find the key data 找到关键数据#######
+#####find the key data 找到关键数据#######i
+project.pop(0)
 n=0
 pro=[]
 for i in project:
     pro.append([])
-    pro[n].append(i.h3.a)
-    pro[n].append(i.div.p)
-    pro[n].append(i.canvas)
+    pro[n].append(project[0].contents[0].contents[3])                    #标题
+    pro[n].append(project[0].contents[2].contents[3])                    #索引
     n=n+1
   
 
@@ -51,15 +49,15 @@ for i in project:
 ########################################
 ####clear and fix the data清理并修正数据########
 for i in range(n):
-    pro[i][0]=str(pro[i][0]).replace("/xdlinux","https://github.com/xdlinux")
-    pro[i][2]=str(pro[i][2]).replace("/xdlinux","https://github.com/xdlinux")
+    pro[i][0]=str(pro[i][0]).replace("/group/","https://groups.google.com/group/")
+    pro[i][1]=str(pro[i][1]).replace("/group/","https://groups.google.com/group/")
 
 
 
 ################################################
 ####save data into file 输出到文件#####
 for row in pro:
-    for i in [0,1,2]:
+    for i in [0,1]:
         print >> f_tar,"</br>"
         print >> f_tar,row[i]
 #print >> f_tar,pro

@@ -6,7 +6,7 @@ use WWW::Mechanize;
 my $mech = WWW::Mechanize->new( autocheck => 1 );
 my $lzt_file;
 
-open(lzt_file,">cache/perl.html");
+open(lzt_file,">cache/maillist.html");
 
 # first, we should login
 $mech->get('https://accounts.google.com/ServiceLogin');
