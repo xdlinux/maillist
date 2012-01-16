@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
 
-    <title>xdproject @xdlinux.info</title>
+    <title>maillist @xdlinux.info</title>
     <script type="text/javascript"
       src="http://xdlinux.info/mathjax/MathJax.js?config=default" ></script>
     <style type="text/css">
@@ -39,9 +39,9 @@
         </a>
       </div>
 
-     <h1><a href="https://github.com/xdlinux">xdproject</a>
+     <h1><a href="https://github.com/xdlinux">maillist</a>
         <span class="small">by <a href="http://linux.xidian.edu.cn">xdlinux</a></span></h1>
      
      <div class="xddescrip">
-        xdproject 系西电开源社区项目实践部分，旨在通过实践的方法促进学习和信息的流动。
+        maillist  系西电开源社区邮件列表部分，旨在提供xdlinux的各位的技术和信息交流的平台。
      </div>

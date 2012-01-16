@@ -39,8 +39,8 @@ n=0
 pro=[]
 for i in project:
     pro.append([])
-    pro[n].append(project[0].contents[0].contents[3])                    #标题
-    pro[n].append(project[0].contents[2].contents[3])                    #索引
+    pro[n].append(i.contents[0].contents[3])                    #标题
+    pro[n].append(i.contents[2].contents[3])                    #索引
     n=n+1
   
 
