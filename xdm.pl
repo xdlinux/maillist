@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use WWW::Mechanize;
+use Net::INET6Glue::INET_is_INET6;                          #ipv6 支持
 
 my $mech = WWW::Mechanize->new( autocheck => 1 );
 my $lzt_file;
@@ -19,7 +20,7 @@ $mech->submit_form(
 );
 
 $mech->get('http://groups.google.com/group/xidian_linux/topics?gvc=1');
-$mech->follow_link( n => 1);
+$mech->follow_link( n => 1);                                 #如果ipv6 的话 这个就不需要了。
 
 print lzt_file ($mech->content);
 
