@@ -37,3 +37,6 @@ TODO
 
 PS: 脑子不太好使了，在这里记录一下吧：`git push -u origin master`
 
+参考资料：
+---
+[邮件列表上的历史讨论](https://groups.google.com/forum/#!msg/xidian_linux/Ntl-5XZ7_JQ/MWXLvCVZQv0J)
